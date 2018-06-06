@@ -18,7 +18,7 @@ num = 1
 	if num %3 == 0
 		puts "mind"
 
-	elsif num == 5
+	elsif num %5 == 0
 		puts "mines"		
 	else
 		puts num
