@@ -6,8 +6,18 @@
 # 	puts 1
 # end
 
+# num = 1
+# 100.times do
+#  puts num
+#  num = num + 1
+# end
+
 num = 1
+
 100.times do
- puts num
- num = num + 1
+	if num == 3
+		puts "minds"
+	end
+	puts num
+	num = num + 1
 end
