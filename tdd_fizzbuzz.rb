@@ -11,11 +11,12 @@ def main(fizz_arr)
 	fizz_arr.each do |n|
 		if n %3 == 0 && n %5 == 0
 			n = "minedminds"
-			# puts n
+		elsif n %3 == 0
+			n = "mined"
 		end
 		new_arr << n
 	end
-	# puts new_arr
+	
 	fizz_arr = new_arr
 end
 # main(fizz_arr)
@@ -45,6 +46,15 @@ end
 # 		puts false
 # 	end
 # end
+def test_third_element_is_mined(fizz_arr)
+	fizz_arr = main(fizz_arr)
+	p fizz_arr
+	if fizz_arr[2] == "mined"
+		puts true
+	else
+		false
+	end
+end
 
 def test_fifteenth_elemt_is_minedminds(fizz_arr)
 	fizz_arr = main(fizz_arr)
