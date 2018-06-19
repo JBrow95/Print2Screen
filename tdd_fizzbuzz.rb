@@ -31,6 +31,15 @@ def test_fifth_element_is_mind(fizz_arr)
 		puts false
 	end
 end
+
+def test_fifteenth_elemt_is_minedminds(fizz_arr)
+	if fizz_arr[14] == "minedminds"
+		puts true
+	else
+		puts false
+	end
+end
 test_length_of_array_is_100(fizz_arr)
 test_third_element_is_mined(fizz_arr)
 test_fifth_element_is_mind(fizz_arr)
+test_fifteenth_elemt_is_minedminds(fizz_arr)
